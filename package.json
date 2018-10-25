@@ -74,7 +74,7 @@
     "lodash": "^4.17.4",
     "lru-cache": "^4.0.2",
     "memory-fs": "^0.4.1",
-    "offline-plugin": "^4.7.0",
+    "offline-plugin": "^5.0.4",
     "opencollective": "^1.0.3",
     "pify": "^2.3.0",
     "post-compile-webpack-plugin": "^0.1.1",
