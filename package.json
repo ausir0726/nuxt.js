@@ -44,8 +44,9 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "precommit": "npm run lint",
-    "prepublish": "npm run build",
-    "postinstall": "opencollective postinstall"
+    "prepublish": "npm run snyk-protect && npm run build",
+    "postinstall": "opencollective postinstall",
+    "snyk-protect": "snyk protect"
   },
   "engines": {
     "node": ">=4.3.0 <5.0.0 || >=5.10",
@@ -95,7 +96,8 @@
     "webpack": "^2.5.0",
     "webpack-bundle-analyzer": "^2.4.0",
     "webpack-dev-middleware": "^1.10.2",
-    "webpack-hot-middleware": "^2.18.0"
+    "webpack-hot-middleware": "^2.18.0",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "ava": "^0.19.1",
@@ -125,5 +127,6 @@
     "type": "opencollective",
     "url": "https://opencollective.com/nuxtjs",
     "logo": "https://opencollective.com/nuxtjs/logo.txt?reverse=true&variant=variant2"
-  }
+  },
+  "snyk": true
 }
